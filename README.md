@@ -7,7 +7,7 @@ This Node library provides easy access to Moipayway APIs for your Node apps. It 
 ## Usage
 
 ```javascript
-Import MoiPayWay from "mpw-node"
+import MoiPayWay from "mpw-node"
 
 const mpw = new MoiPayWay("public_key", "secret_token");
 
