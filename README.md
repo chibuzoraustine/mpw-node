@@ -22,7 +22,7 @@ This Node library provides easy access to Moipayway APIs for your Node apps. It 
 
 ## Installation
 
-Use the package manager [npm](https:/- [MoiPayWay Api Wrapper For Node.js](#moipayway-api-wrapper-for-nodejs)
+Use npm to install mpw-node
 
 ```bash
 npm install mpw-node
