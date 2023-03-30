@@ -1,6 +1,6 @@
 {
     "name": "mpw-node",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "",
     "main": "index.js",
     "type": "module",
@@ -12,7 +12,7 @@
         "url": "git+https://github.com/chibuzoraustine/mpw-node.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "Anurigwo Chibuzor",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/chibuzoraustine/mpw-node/issues"
