@@ -1,9 +1,8 @@
+# MoiPayWay Api Wrapper For Node.js
 
 <p align="center">
     <img title="Flutterwave" src="https://moipayway.com/image/logo-main-black.png" width="50%"/>
 </p>
-
-# MoiPayWay Api Wrapper For Node.js
 
 ## Intoduction
 
