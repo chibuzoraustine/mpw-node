@@ -22,8 +22,6 @@ This Node library provides easy access to Moipayway APIs for your Node apps. It 
 
 ## Installation
 
-Use npm to install mpw-node
-
 ```bash
 npm install mpw-node
 ```
@@ -31,7 +29,7 @@ npm install mpw-node
 ## Usage
 
 ```javascript
-Import MoiPayWay from "mpw-node"
+import MoiPayWay from "mpw-node"
 
 const mpw = new MoiPayWay("secret_token");
 
@@ -48,7 +46,7 @@ try {
 Some endpoint requires data to be parsed with the request. Below is an example of sending requests with a payload:
 
 ```javascript
-Import MoiPayWay from "mpw-node"
+import MoiPayWay from "mpw-node"
 
 const mpw = new MoiPayWay("secret_token");
 
