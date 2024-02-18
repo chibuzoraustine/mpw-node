@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../../utils/helpers");
+const helpers_js_1 = require("../../utils/helpers.js");
 class TokenMulti {
     constructor(base) {
         this.base = base;
@@ -17,31 +17,31 @@ class TokenMulti {
     details(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/multitoken/details', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     deploy(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/multitoken/deploy', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     mint(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/multitoken/mint', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     transfer(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/multitoken/transfer', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     burn(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/multitoken/burn', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }

@@ -1,12 +1,12 @@
-import { TokenStorageDetailsRequest, TokenMultiBurnRequest, TokenMultiDeployRequest, TokenMultiMintRequest, TokenMultiTransferRequest } from "../../types";
-import Base from "../base";
-import { Response } from "../../types";
+import { TokenStorageDetailsRequest, TokenMultiBurnRequest, TokenMultiDeployRequest, TokenMultiMintRequest, TokenMultiTransferRequest } from "../../types/index.js";
+import Base from "../base.js";
+import { Res } from "../../types/index.js";
 export default class TokenMulti {
     private base;
     constructor(base: Base);
-    details(payload: TokenStorageDetailsRequest): Promise<Response<any>>;
-    deploy(payload: TokenMultiDeployRequest): Promise<Response<any>>;
-    mint(payload: TokenMultiMintRequest): Promise<Response<any>>;
-    transfer(payload: TokenMultiTransferRequest): Promise<Response<any>>;
-    burn(payload: TokenMultiBurnRequest): Promise<Response<any>>;
+    details(payload: TokenStorageDetailsRequest): Promise<Res<any>>;
+    deploy(payload: TokenMultiDeployRequest): Promise<Res<any>>;
+    mint(payload: TokenMultiMintRequest): Promise<Res<any>>;
+    transfer(payload: TokenMultiTransferRequest): Promise<Res<any>>;
+    burn(payload: TokenMultiBurnRequest): Promise<Res<any>>;
 }

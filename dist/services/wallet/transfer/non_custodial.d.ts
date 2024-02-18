@@ -1,7 +1,7 @@
-import Base from "../../../services/base";
-import { Response, WalletTransferNonCustodialSingleRequest } from "../../../types";
+import Base from "../../../services/base.js";
+import { Res, WalletTransferNonCustodialSingleRequest } from "../../../types/index.js";
 export default class WalletTransferNonCustodial {
     private base;
     constructor(base: Base);
-    single(payload: WalletTransferNonCustodialSingleRequest): Promise<Response<any>>;
+    single(payload: WalletTransferNonCustodialSingleRequest): Promise<Res<any>>;
 }

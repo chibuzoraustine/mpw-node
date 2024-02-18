@@ -8,21 +8,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../../../utils/helpers");
-const method_1 = __importDefault(require("./method"));
+const helpers_js_1 = require("../../../utils/helpers.js");
+const index_js_1 = require("./method/index.js");
 class WalletCollection {
     constructor(base) {
         this.base = base;
-        this.method = new method_1.default(this.base);
+        this.method = new index_js_1.default(this.base);
     }
     initiate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/initiate', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }

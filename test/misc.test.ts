@@ -1,4 +1,4 @@
-import MoiPayWay from '../index';
+import MoiPayWay from '../src/index.js';
 import dotenv from "dotenv";
 dotenv.config();
 

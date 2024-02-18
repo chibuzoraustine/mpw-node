@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../../../../utils/helpers");
+const helpers_js_1 = require("../../../../utils/helpers.js");
 class WalletCollectionMethodFiat {
     constructor(base) {
         this.base = base;
@@ -17,37 +17,37 @@ class WalletCollectionMethodFiat {
     info(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/method/get-info', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     payWithUSSD(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/method/ussd', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     payToDynamicVirtualAccount(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/method/dynamic-virtual-account', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     payWithCardNaked(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/method/card-naked', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     payWithCardEmbed(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/method/card-embed', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     payWithSavedCardToken(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/method/saved-card-token', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }

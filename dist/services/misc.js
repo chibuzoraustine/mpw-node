@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../utils/helpers");
+const helpers_js_1 = require("../utils/helpers.js");
 class Misc {
     constructor(base) {
         this.base = base;
@@ -19,13 +19,13 @@ class Misc {
             const formData = new FormData();
             formData.append('file', payload);
             const res = yield this.base.request('file-upload', formData, "multipart/form-data");
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     countries() {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('countries');
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }

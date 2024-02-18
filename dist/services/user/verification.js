@@ -21,7 +21,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 };
 var _UserVerification_base;
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../../utils/helpers");
+const helpers_js_1 = require("../../utils/helpers.js");
 class UserVerification {
     constructor(base) {
         _UserVerification_base.set(this, void 0);
@@ -30,7 +30,7 @@ class UserVerification {
     bvnPhotoPhoneMatch(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield __classPrivateFieldGet(this, _UserVerification_base, "f").request('user/verification/process', Object.assign({ code: "bvn" }, payload));
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }

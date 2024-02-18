@@ -1,5 +1,5 @@
-import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Response } from "../types";
+import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Res } from "../types/index.js";
 export default class Authentication {
-    static initiate(payload: AuthInitiatePayload): Promise<Response<AuthResponse>>;
-    static connect(accessToken: string, payload: AuthConnectPayload): Promise<Response<AuthResponse>>;
+    static initiate(payload: AuthInitiatePayload): Promise<Res<AuthResponse>>;
+    static connect(accessToken: string, payload: AuthConnectPayload): Promise<Res<AuthResponse>>;
 }

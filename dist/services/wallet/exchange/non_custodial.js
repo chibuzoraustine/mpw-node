@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../../../utils/helpers");
+const helpers_js_1 = require("../../../utils/helpers.js");
 class WalletExchangeNonCustodial {
     constructor(base) {
         this.base = base;
@@ -17,13 +17,13 @@ class WalletExchangeNonCustodial {
     initiate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/exchange/initiate', Object.assign({ code: "crypto_crypto", custodial: "No" }, payload));
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
     calculate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/exchange/calculate', Object.assign({ code: "crypto_crypto", custodial: "No" }, payload));
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }

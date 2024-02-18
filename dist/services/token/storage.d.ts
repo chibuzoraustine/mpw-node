@@ -1,10 +1,10 @@
-import { TokenStorageCreateRequest, TokenStorageDetailsRequest, TokenStorageUploadRequest } from "../../types";
-import Base from "../base";
-import { Response } from "../../types";
+import { TokenStorageCreateRequest, TokenStorageDetailsRequest, TokenStorageUploadRequest } from "../../types/index.js";
+import Base from "../base.js";
+import { Res } from "../../types/index.js";
 export default class TokenStorage {
     private base;
     constructor(base: Base);
-    upload(payload: TokenStorageUploadRequest): Promise<Response<any>>;
-    create(payload: TokenStorageCreateRequest): Promise<Response<any>>;
-    details(payload: TokenStorageDetailsRequest): Promise<Response<any>>;
+    upload(payload: TokenStorageUploadRequest): Promise<Res<any>>;
+    create(payload: TokenStorageCreateRequest): Promise<Res<any>>;
+    details(payload: TokenStorageDetailsRequest): Promise<Res<any>>;
 }

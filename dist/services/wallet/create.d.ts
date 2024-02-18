@@ -1,7 +1,7 @@
-import { Response, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "../../types";
+import { Res, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "../../types/index.js";
 export default class WalletCreate {
     private base;
     constructor(base: any);
-    fiat(payload: WalletCreateFiatRequest): Promise<Response<any>>;
-    crypto(payload: WalletCreateCryptoRequest): Promise<Response<any>>;
+    fiat(payload: WalletCreateFiatRequest): Promise<Res<any>>;
+    crypto(payload: WalletCreateCryptoRequest): Promise<Res<any>>;
 }

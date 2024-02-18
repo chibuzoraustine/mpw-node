@@ -8,35 +8,32 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const authentication_1 = __importDefault(require("./services/authentication"));
-const base_1 = __importDefault(require("./services/base"));
-const token_1 = __importDefault(require("./services/token"));
-const misc_1 = __importDefault(require("./services/misc"));
-const user_1 = __importDefault(require("./services/user"));
-const verification_1 = __importDefault(require("./services/verification"));
-const wallet_1 = __importDefault(require("./services/wallet"));
+const authentication_js_1 = require("./services/authentication.js");
+const base_js_1 = require("./services/base.js");
+const index_js_1 = require("./services/token/index.js");
+const misc_js_1 = require("./services/misc.js");
+const index_js_2 = require("./services/user/index.js");
+const verification_js_1 = require("./services/verification.js");
+const index_js_3 = require("./services/wallet/index.js");
 class MoiPayWay {
     constructor(secret_token) {
         this.secret_token = secret_token;
-        this.base = new base_1.default(this.secret_token);
-        this.user = new user_1.default(this.base);
-        this.misc = new misc_1.default(this.base);
-        this.verification = new verification_1.default(this.base);
-        this.token = new token_1.default(this.base);
-        this.wallet = new wallet_1.default(this.base);
+        this.base = new base_js_1.default(this.secret_token);
+        this.user = new index_js_2.default(this.base);
+        this.misc = new misc_js_1.default(this.base);
+        this.verification = new verification_js_1.default(this.base);
+        this.token = new index_js_1.default(this.base);
+        this.wallet = new index_js_3.default(this.base);
     }
     static initiate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
-            return authentication_1.default.initiate(payload);
+            return authentication_js_1.default.initiate(payload);
         });
     }
     static connect(access_token, payload) {
         return __awaiter(this, void 0, void 0, function* () {
-            return authentication_1.default.connect(access_token, payload);
+            return authentication_js_1.default.connect(access_token, payload);
         });
     }
 }

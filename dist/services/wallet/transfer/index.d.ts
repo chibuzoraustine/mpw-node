@@ -1,6 +1,6 @@
-import Base from "../../../services/base";
-import WalletTransferCustodial from "./custodial";
-import WalletTransferNonCustodial from "./non_custodial";
+import Base from "../../../services/base.js";
+import WalletTransferCustodial from "./custodial.js";
+import WalletTransferNonCustodial from "./non_custodial.js";
 export default class WalletDetails {
     private base;
     custodial: WalletTransferCustodial;

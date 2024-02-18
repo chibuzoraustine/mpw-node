@@ -1,12 +1,12 @@
-import { Response, WalletUpdateRequest } from "../../types";
-import Base from "../base";
-import WalletCreate from "./create";
-import WalletChannel from "./channel";
-import WalletCollection from "./collection";
-import WalletTransfer from "./transfer";
-import WalletDetails from "./details";
-import WalletTransactions from "./transactions";
-import WalletExchange from "./exchange";
+import { Res, WalletUpdateRequest } from "../../types/index.js";
+import Base from "../base.js";
+import WalletCreate from "./create.js";
+import WalletChannel from "./channel/index.js";
+import WalletCollection from "./collection/index.js";
+import WalletTransfer from "./transfer/index.js";
+import WalletDetails from "./details.js";
+import WalletTransactions from "./transactions.js";
+import WalletExchange from "./exchange/index.js";
 export default class Wallet {
     private base;
     create: WalletCreate;
@@ -17,5 +17,5 @@ export default class Wallet {
     transactions: WalletTransactions;
     exchange: WalletExchange;
     constructor(base: Base);
-    update(payload: WalletUpdateRequest): Promise<Response<any>>;
+    update(payload: WalletUpdateRequest): Promise<Res<any>>;
 }

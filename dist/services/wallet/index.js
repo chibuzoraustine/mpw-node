@@ -8,33 +8,30 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const create_1 = __importDefault(require("./create"));
-const helpers_1 = require("../../utils/helpers");
-const channel_1 = __importDefault(require("./channel"));
-const collection_1 = __importDefault(require("./collection"));
-const transfer_1 = __importDefault(require("./transfer"));
-const details_1 = __importDefault(require("./details"));
-const transactions_1 = __importDefault(require("./transactions"));
-const exchange_1 = __importDefault(require("./exchange"));
+const create_js_1 = require("./create.js");
+const helpers_js_1 = require("../../utils/helpers.js");
+const index_js_1 = require("./channel/index.js");
+const index_js_2 = require("./collection/index.js");
+const index_js_3 = require("./transfer/index.js");
+const details_js_1 = require("./details.js");
+const transactions_js_1 = require("./transactions.js");
+const index_js_4 = require("./exchange/index.js");
 class Wallet {
     constructor(base) {
         this.base = base;
-        this.create = new create_1.default(this.base);
-        this.channel = new channel_1.default(this.base);
-        this.collection = new collection_1.default(this.base);
-        this.transfer = new transfer_1.default(this.base);
-        this.details = new details_1.default(this.base);
-        this.transactions = new transactions_1.default(this.base);
-        this.exchange = new exchange_1.default(this.base);
+        this.create = new create_js_1.default(this.base);
+        this.channel = new index_js_1.default(this.base);
+        this.collection = new index_js_2.default(this.base);
+        this.transfer = new index_js_3.default(this.base);
+        this.details = new details_js_1.default(this.base);
+        this.transactions = new transactions_js_1.default(this.base);
+        this.exchange = new index_js_4.default(this.base);
     }
     update(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/update', payload);
-            return (0, helpers_1.response)(res);
+            return (0, helpers_js_1.response)(res);
         });
     }
 }
