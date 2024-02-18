@@ -9,8 +9,8 @@ export default class Authentication {
         return response<AuthResponse>(_req.data);
     }
 
-    static async connect(accessToken: string, payload: AuthConnectPayload): Promise<Res<AuthResponse>> {
-        let _req = await http(accessToken).post('authentication/connect', payload);
+    static async connect(connectionToken: string, payload: AuthConnectPayload): Promise<Res<AuthResponse>> {
+        let _req = await http(connectionToken).post('authentication/connect', payload);
         return response<AuthResponse>(_req.data);
     }
 }
