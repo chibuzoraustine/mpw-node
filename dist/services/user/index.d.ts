@@ -1,4 +1,4 @@
-import { Response, ResponsePaginate, UserCreateRequest, UserCreateResponse, UserDetailsRequest, UserDetailsResponse, UserUpdateRequest, UserUpdateResponse } from "@/types";
+import { Response, ResponsePaginate, UserCreateRequest, UserCreateResponse, UserDetailsRequest, UserDetailsResponse, UserUpdateRequest, UserUpdateResponse } from "../../types";
 import Base from "../base";
 import UserVerification from "./verification";
 export default class User {

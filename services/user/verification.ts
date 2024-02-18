@@ -1,6 +1,6 @@
-import { Response, UserVerifyBVNPhotoPhoneMatchRequest } from "@/types";
+import { Response, UserVerifyBVNPhotoPhoneMatchRequest } from "../../types";
 import Base from "../base";
-import { response } from "@/utils/helpers";
+import { response } from "../../utils/helpers";
 
 export default class UserVerification {
 

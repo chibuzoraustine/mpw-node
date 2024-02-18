@@ -1,6 +1,6 @@
-import Base from "@/services/base";
-import { Response, WalletCollectionMethodFiatInfoRequest, WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest, WalletCollectionMethodFiatPayWithCardEmbedRequest, WalletCollectionMethodFiatPayWithCardNakedRequest, WalletCollectionMethodFiatPayWithSavedCardTokenRequest, WalletCollectionMethodFiatPayWithUSSDRequest } from "@/types";
-import { response } from "@/utils/helpers";
+import Base from "../../../../services/base";
+import { Response, WalletCollectionMethodFiatInfoRequest, WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest, WalletCollectionMethodFiatPayWithCardEmbedRequest, WalletCollectionMethodFiatPayWithCardNakedRequest, WalletCollectionMethodFiatPayWithSavedCardTokenRequest, WalletCollectionMethodFiatPayWithUSSDRequest } from "../../../../types";
+import { response } from "../../../../utils/helpers";
 
 export default class WalletCollectionMethodFiat {
 

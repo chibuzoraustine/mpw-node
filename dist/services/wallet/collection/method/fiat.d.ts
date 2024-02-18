@@ -1,5 +1,5 @@
-import Base from "@/services/base";
-import { Response, WalletCollectionMethodFiatInfoRequest, WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest, WalletCollectionMethodFiatPayWithCardEmbedRequest, WalletCollectionMethodFiatPayWithCardNakedRequest, WalletCollectionMethodFiatPayWithSavedCardTokenRequest, WalletCollectionMethodFiatPayWithUSSDRequest } from "@/types";
+import Base from "../../../../services/base";
+import { Response, WalletCollectionMethodFiatInfoRequest, WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest, WalletCollectionMethodFiatPayWithCardEmbedRequest, WalletCollectionMethodFiatPayWithCardNakedRequest, WalletCollectionMethodFiatPayWithSavedCardTokenRequest, WalletCollectionMethodFiatPayWithUSSDRequest } from "../../../../types";
 export default class WalletCollectionMethodFiat {
     private base;
     constructor(base: Base);

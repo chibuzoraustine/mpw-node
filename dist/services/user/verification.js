@@ -21,7 +21,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 };
 var _UserVerification_base;
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("@/utils/helpers");
+const helpers_1 = require("../../utils/helpers");
 class UserVerification {
     constructor(base) {
         _UserVerification_base.set(this, void 0);

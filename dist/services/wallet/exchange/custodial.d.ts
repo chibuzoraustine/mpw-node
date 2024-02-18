@@ -1,5 +1,5 @@
-import Base from "@/services/base";
-import { Response, WalletExchangeCustodialCalculateRequest, WalletExchangeCustodialInitiateRequest } from "@/types";
+import Base from "../../../services/base";
+import { Response, WalletExchangeCustodialCalculateRequest, WalletExchangeCustodialInitiateRequest } from "../../../types";
 export default class WalletExchangeCustodial {
     private base;
     constructor(base: Base);

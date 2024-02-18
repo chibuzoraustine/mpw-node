@@ -1,6 +1,6 @@
-import Base from "@/services/base";
+import Base from "../../../services/base";
 import WalletChannelTransferRecipient from "./transfer_recipient";
-import { Response, WalletChannelChainAddressRequest, WalletChannelDetailsRequest, WalletChannelDownloadRequest, WalletChannelRemoveRequest, WalletChannelVirtualAccountRequest } from "@/types";
+import { Response, WalletChannelChainAddressRequest, WalletChannelDetailsRequest, WalletChannelDownloadRequest, WalletChannelRemoveRequest, WalletChannelVirtualAccountRequest } from "../../../types";
 export default class WalletChannel {
     private base;
     transferRecipient: WalletChannelTransferRecipient;

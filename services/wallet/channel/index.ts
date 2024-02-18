@@ -1,4 +1,4 @@
-import Base from "@/services/base";
+import Base from "../../../services/base";
 import WalletChannelTransferRecipient from "./transfer_recipient";
 import {
     Response,
@@ -7,8 +7,8 @@ import {
     WalletChannelDownloadRequest,
     WalletChannelRemoveRequest,
     WalletChannelVirtualAccountRequest
-} from "@/types";
-import { response } from "@/utils/helpers";
+} from "../../../types";
+import { response } from "../../../utils/helpers";
 
 export default class WalletChannel {
 

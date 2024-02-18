@@ -1,4 +1,4 @@
-import Base from "@/services/base";
+import Base from "../../../../services/base";
 import WalletChannelTransferRecipientEUR from "./eur";
 import WalletChannelTransferRecipientGBP from "./gbp";
 import WalletChannelTransferRecipientNGN from "./ngn";

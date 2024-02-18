@@ -1,6 +1,6 @@
-import http from "@/libs/http";
-import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Response } from "@/types";
-import { response } from "@/utils/helpers";
+import http from "../libs/http";
+import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Response } from "../types";
+import { response } from "../utils/helpers";
 
 export default class Authentication {
 

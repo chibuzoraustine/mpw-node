@@ -7,9 +7,9 @@ import {
     UserDetailsResponse,
     UserUpdateRequest,
     UserUpdateResponse
-} from "@/types";
+} from "../../types";
 import Base from "../base";
-import { response, responsePaginate } from "@/utils/helpers";
+import { response, responsePaginate } from "../../utils/helpers";
 import UserVerification from "./verification";
 
 export default class User {

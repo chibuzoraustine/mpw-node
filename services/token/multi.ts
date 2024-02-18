@@ -4,10 +4,10 @@ import {
     TokenMultiDeployRequest,
     TokenMultiMintRequest,
     TokenMultiTransferRequest
-} from "@/types";
+} from "../../types";
 import Base from "../base";
-import { Response } from "@/types";
-import { response } from "@/utils/helpers";
+import { Response } from "../../types";
+import { response } from "../../utils/helpers";
 
 export default class TokenMulti {
 

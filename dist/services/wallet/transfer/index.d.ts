@@ -1,4 +1,4 @@
-import Base from "@/services/base";
+import Base from "../../../services/base";
 import WalletTransferCustodial from "./custodial";
 import WalletTransferNonCustodial from "./non_custodial";
 export default class WalletDetails {

@@ -1,7 +1,7 @@
-import { Response, WalletUpdateRequest } from "@/types";
+import { Response, WalletUpdateRequest } from "../../types";
 import Base from "../base";
 import WalletCreate from "./create";
-import { response } from "@/utils/helpers";
+import { response } from "../../utils/helpers";
 import WalletChannel from "./channel";
 import WalletCollection from "./collection";
 import WalletTransfer from "./transfer";

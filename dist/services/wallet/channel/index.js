@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const transfer_recipient_1 = __importDefault(require("./transfer_recipient"));
-const helpers_1 = require("@/utils/helpers");
+const helpers_1 = require("../../../utils/helpers");
 class WalletChannel {
     constructor(base) {
         this.base = base;

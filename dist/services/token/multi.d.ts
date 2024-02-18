@@ -1,6 +1,6 @@
-import { TokenStorageDetailsRequest, TokenMultiBurnRequest, TokenMultiDeployRequest, TokenMultiMintRequest, TokenMultiTransferRequest } from "@/types";
+import { TokenStorageDetailsRequest, TokenMultiBurnRequest, TokenMultiDeployRequest, TokenMultiMintRequest, TokenMultiTransferRequest } from "../../types";
 import Base from "../base";
-import { Response } from "@/types";
+import { Response } from "../../types";
 export default class TokenMulti {
     private base;
     constructor(base: Base);

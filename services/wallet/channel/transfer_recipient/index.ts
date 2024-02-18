@@ -1,6 +1,4 @@
-import Base from "@/services/base";
-import { Response } from "@/types";
-import { response } from "@/utils/helpers";
+import Base from "../../../../services/base";
 import WalletChannelTransferRecipientEUR from "./eur";
 import WalletChannelTransferRecipientGBP from "./gbp";
 import WalletChannelTransferRecipientNGN from "./ngn";

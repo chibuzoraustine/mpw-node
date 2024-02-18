@@ -31,10 +31,10 @@ import {
     VerifyNgVotersCardRequest,
     VerifyPEPRequest,
     VerifyWalletAddressRequest
-} from "@/types";
+} from "../types";
 import Base from "./base.js";
-import { Response } from "@/types/global";
-import { response } from "@/utils/helpers";
+import { Response } from "../types/global";
+import { response } from "../utils/helpers";
 
 export default class Verification {
 

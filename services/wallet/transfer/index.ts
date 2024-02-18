@@ -1,6 +1,6 @@
-import Base from "@/services/base";
-import { Response, WalletCollectionInitiateRequest } from "@/types";
-import { response } from "@/utils/helpers";
+import Base from "../../../services/base";
+import { Response, WalletCollectionInitiateRequest } from "../../../types";
+import { response } from "../../../utils/helpers";
 import WalletTransferCustodial from "./custodial";
 import WalletTransferNonCustodial from "./non_custodial";
 

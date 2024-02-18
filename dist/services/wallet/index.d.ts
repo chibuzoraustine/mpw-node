@@ -1,4 +1,4 @@
-import { Response, WalletUpdateRequest } from "@/types";
+import { Response, WalletUpdateRequest } from "../../types";
 import Base from "../base";
 import WalletCreate from "./create";
 import WalletChannel from "./channel";

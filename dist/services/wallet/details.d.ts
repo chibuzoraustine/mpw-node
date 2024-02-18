@@ -1,5 +1,5 @@
-import Base from "@/services/base";
-import { Response, WalletDetailsCustodialRequest, WalletDetailsNonCustodialRequest } from "@/types";
+import Base from "../../services/base";
+import { Response, WalletDetailsCustodialRequest, WalletDetailsNonCustodialRequest } from "../../types";
 export default class WalletDetails {
     private base;
     constructor(base: Base);

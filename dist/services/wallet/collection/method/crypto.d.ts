@@ -1,5 +1,5 @@
-import Base from "@/services/base";
-import { Response, WalletCollectionMethodCryptoChainAddressRequest } from "@/types";
+import Base from "../../../../services/base";
+import { Response, WalletCollectionMethodCryptoChainAddressRequest } from "../../../../types";
 export default class WalletCollectionMethodCrypto {
     private base;
     constructor(base: Base);

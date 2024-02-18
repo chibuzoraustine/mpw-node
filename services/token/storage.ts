@@ -2,10 +2,10 @@ import {
     TokenStorageCreateRequest,
     TokenStorageDetailsRequest,
     TokenStorageUploadRequest
-} from "@/types";
+} from "../../types";
 import Base from "../base";
-import { Response } from "@/types";
-import { response } from "@/utils/helpers";
+import { Response } from "../../types";
+import { response } from "../../utils/helpers";
 
 export default class TokenStorage {
 

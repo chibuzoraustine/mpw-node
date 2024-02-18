@@ -1,6 +1,6 @@
-import { Response, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "@/types";
+import { Response, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "../../types";
 import Base from "../base";
-import { response } from "@/utils/helpers";
+import { response } from "../../utils/helpers";
 
 export default class WalletCreate {
 

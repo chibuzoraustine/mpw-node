@@ -1,4 +1,4 @@
-import { baseUrl } from "@/utils/config";
+import { baseUrl } from "../utils/config";
 import axios from "axios";
 
 export default function http(token?:string, contentType?:string) {

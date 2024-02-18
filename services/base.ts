@@ -1,5 +1,5 @@
-import http from "@/libs/http";
-import { BadRequestError } from "@/utils/errors";
+import http from "../libs/http";
+import { BadRequestError } from "../utils/errors";
 
 export default class Base {
 

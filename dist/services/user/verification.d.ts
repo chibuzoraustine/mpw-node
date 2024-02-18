@@ -1,4 +1,4 @@
-import { Response, UserVerifyBVNPhotoPhoneMatchRequest } from "@/types";
+import { Response, UserVerifyBVNPhotoPhoneMatchRequest } from "../../types";
 import Base from "../base";
 export default class UserVerification {
     #private;

@@ -1,6 +1,6 @@
 import Base from "./base";
-import { MiscCountriesResponse, MiscFileUploadResponse } from "@/types";
-import { Response } from "@/types";
+import { MiscCountriesResponse, MiscFileUploadResponse } from "../types";
+import { Response } from "../types";
 export default class Misc {
     private base;
     constructor(base: Base);

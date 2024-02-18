@@ -1,6 +1,6 @@
-import { TokenStorageCreateRequest, TokenStorageDetailsRequest, TokenStorageUploadRequest } from "@/types";
+import { TokenStorageCreateRequest, TokenStorageDetailsRequest, TokenStorageUploadRequest } from "../../types";
 import Base from "../base";
-import { Response } from "@/types";
+import { Response } from "../../types";
 export default class TokenStorage {
     private base;
     constructor(base: Base);

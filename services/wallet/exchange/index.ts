@@ -1,4 +1,4 @@
-import Base from "@/services/base";
+import Base from "../../../services/base";
 import WalletExchangeCustodial from "./custodial";
 import WalletExchangeNonCustodial from "./non_custodial";
 

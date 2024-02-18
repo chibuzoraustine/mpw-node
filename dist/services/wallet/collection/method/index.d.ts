@@ -1,4 +1,4 @@
-import Base from "@/services/base";
+import Base from "../../../../services/base";
 import WalletCollectionMethodFiat from "./fiat";
 import WalletCollectionMethodCrypto from "./crypto";
 export default class WalletCollectionMethod {

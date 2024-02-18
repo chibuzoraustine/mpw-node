@@ -1,7 +1,7 @@
-import { response } from "@/utils/helpers";
+import { response } from "../utils/helpers";
 import Base from "./base";
-import { MiscCountriesResponse, MiscFileUploadResponse } from "@/types";
-import { Response } from "@/types";
+import { MiscCountriesResponse, MiscFileUploadResponse } from "../types";
+import { Response } from "../types";
 
 export default class Misc {
 

@@ -1,4 +1,4 @@
-import { ApiResponse, ApiResponsePaginate, Response, ResponsePaginate } from "@/types";
+import { ApiResponse, ApiResponsePaginate, Response, ResponsePaginate } from "../types";
 import { baseUrl } from "./config";
 import { BadRequestError } from "./errors";
 

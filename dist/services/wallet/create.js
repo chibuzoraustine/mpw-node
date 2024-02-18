@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("@/utils/helpers");
+const helpers_1 = require("../../utils/helpers");
 class WalletCreate {
     constructor(base) {
         this.base = base;

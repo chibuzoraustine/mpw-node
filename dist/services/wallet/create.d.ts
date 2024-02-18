@@ -1,4 +1,4 @@
-import { Response, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "@/types";
+import { Response, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "../../types";
 export default class WalletCreate {
     private base;
     constructor(base: any);

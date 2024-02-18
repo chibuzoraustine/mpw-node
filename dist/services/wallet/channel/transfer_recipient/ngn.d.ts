@@ -1,5 +1,5 @@
-import Base from "@/services/base";
-import { Response, WalletChannelTransferRecipientNGNSingleRequest } from "@/types";
+import Base from "../../../../services/base";
+import { Response, WalletChannelTransferRecipientNGNSingleRequest } from "../../../../types";
 export default class WalletChannelTransferRecipientNGN {
     private base;
     constructor(base: Base);

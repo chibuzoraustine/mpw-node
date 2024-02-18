@@ -1,6 +1,6 @@
-import Base from "@/services/base";
-import { Response, WalletTransactionsCustodialRequest, WalletTransactionsNonCustodialRequest } from "@/types";
-import { response } from "@/utils/helpers";
+import Base from "../../services/base";
+import { Response, WalletTransactionsCustodialRequest, WalletTransactionsNonCustodialRequest } from "../../types";
+import { response } from "../../utils/helpers";
 
 export default class WalletTransactions {
 
