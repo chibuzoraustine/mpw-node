@@ -1,7 +1,7 @@
 # MoiPayWay Nodejs Library
 
 <p align="center">
-    <img title="Flutterwave" src="https://moipayway.com/wp-content/uploads/2023/04/moipayway.png" width="50%"/>
+    <img title="MoiPayWay" src="https://moipayway.com/wp-content/uploads/2023/04/moipayway.png" width="50%"/>
 </p>
 
 ## Introduction
@@ -49,7 +49,7 @@ import MoiPayWay from "mpw-node"
 const mpw = new MoiPayWay("secret_token");
 
 try {
-    console.log(await mpw.misc.banks())
+    console.log(await mpw.misc.countries())
 } catch (e) {
     console.log(e)
 }
