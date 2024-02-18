@@ -89,16 +89,13 @@ try {
 
 Furthermore, your IDE may offer payload suggestions to facilitate the process. Each response has a return type which will also aid in consuming the data received.
 
-<video width="70%" autoplay loop muted>
-    <source src="https://api.moipayway.co/files/94f998790d0e16afa60f16cebb078073Z38BxMbTGx.mp4" type="video/mp4" />
-</video>
+<img title="MoiPayWay" src="https://api.moipayway.co/files/3dd4df526de6f97e976e17e5ef10deefq6JbleDsS4.gif" width="70%"/>
 
-<!-- ![Video Demo](https://api.moipayway.co/files/94f998790d0e16afa60f16cebb078073Z38BxMbTGx.mp4) -->
-
+<!-- ![Preview](https://api.moipayway.co/files/3dd4df526de6f97e976e17e5ef10deefq6JbleDsS4.gif) -->
 
 ## Error handling
 
-You can catch request errors by wrapping the request method in a try / catch block.
+You can catch request errors by wrapping the method in a try / catch block.
 
 ```javascript
 ...
