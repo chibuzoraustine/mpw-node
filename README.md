@@ -1,23 +1,39 @@
-# MoiPayWay Api Wrapper For Node.js
+# MoiPayWay Nodejs Library
 
 <p align="center">
-    <img title="Flutterwave" src="https://moipayway.com/image/logo-main-black.png" width="50%"/>
+    <img title="Flutterwave" src="https://moipayway.com/wp-content/uploads/2023/04/moipayway.png" width="50%"/>
 </p>
 
-## Intoduction
+## Introduction
 
-This Node library provides easy access to Moipayway APIs for your Node apps. It abstracts the complexity involved in direct integration and allows you to make quick calls to the APIs.
+The library simplifies interaction with Moipayway APIs in your Node applications. It streamlines the process of integration, eliminating the need to deal with intricate details, and facilitates rapid API calls. Key features includes:
 
+- Wallets: creating and managing wallets (fiat, crypto).
+- Making transfers, single/bulk. Fiat (NGN, GBP, EUR, USD) & Crypto.
+- Manage virtual accounts.
+- Tokens: create and manage token, such as; NFT, fungible token, stable coins, storage token, etc.
+- Verification: running identity checks, credit checks etc.
+- AI: verify document image (drivers license NIN, BVN, etc), Face Comparison.
+- Lookups: Document validity check, CAC, etc.
 
-- [MoiPayWay Api Wrapper For Node.js](#moipayway-api-wrapper-for-nodejs)
-  - [Intoduction](#intoduction)
+## Table of Content
+- [MoiPayWay Nodejs Library](#moipayway-nodejs-library)
+  - [Introduction](#introduction)
+  - [Table of Content](#table-of-content)
+  - [Requirements](#requirements)
   - [Installation](#installation)
-  - [Usage](#usage)
-  - [Sending requests with a payload](#sending-requests-with-a-payload)
-  - [Error handling](#error-handling)
+  - [Initialization](#initialization)
   - [Authenticate](#authenticate)
+  - [Sending requests with payload](#sending-requests-with-payload)
+  - [Error handling](#error-handling)
+  - [More usage documentation](#more-usage-documentation)
+  - [Testing](#testing)
   - [License](#license)
 
+
+## Requirements
+
+1. Node 14 or higher.
 
 ## Installation
 
@@ -25,7 +41,7 @@ This Node library provides easy access to Moipayway APIs for your Node apps. It 
 npm install mpw-node
 ```
 
-## Usage
+## Initialization
 
 ```javascript
 import MoiPayWay from "mpw-node"
@@ -40,36 +56,45 @@ try {
 
 ```
 
-## Sending requests with a payload
+## Authenticate
 
-Some endpoint requires data to be parsed with the request. Below is an example of sending requests with a payload:
+Refer to the documentation linked below to understand how to generate secret tokens for authenticating the Moipayway SDK.
+
+[Authentication](documentation/Authentication.md)
+
+
+## Sending requests with payload
+
+Some endpoint requires additional data to be included in the request payload. Below is an example demonstrating sending requests with payload:
 
 ```javascript
 import MoiPayWay from "mpw-node"
 
 const mpw = new MoiPayWay("secret_token");
 
-const payload = {
-    "code": "",
-    "order_reference_code": "",
-    "meta": {
-        "amount": "", //amount
-        "name": "", //label
-        "narration": "", //details of value collection
-        "from": "", //customID
-        "to": "",
-        "route": "" //enum: internal - customID  [Pass if transfer is from one wallet to another wallet within MoiPayWay] or external pass settlement account ID
-    }
-}
-
 try {
-    const req = await mpw.fiat.transfer(payload);
-    console.log(req)
+    const response = await mpw.wallet.create.fiat({
+        code: "***",
+        meta: {
+            name: "***",
+            user_id: "***" 
+        }
+    });
+    console.log(response)
 } catch (e) {
     console.log(e)
 }
 
 ```
+
+Furthermore, your IDE may offer payload suggestions to facilitate the process. Each response has a return type which will also aid in consuming the data received.
+
+<video width="70%" autoplay loop muted>
+    <source src="https://api.moipayway.co/files/94f998790d0e16afa60f16cebb078073Z38BxMbTGx.mp4" type="video/mp4" />
+</video>
+
+<!-- ![Video Demo](https://api.moipayway.co/files/94f998790d0e16afa60f16cebb078073Z38BxMbTGx.mp4) -->
+
 
 ## Error handling
 
@@ -78,9 +103,11 @@ You can catch request errors by wrapping the request method in a try / catch blo
 ```javascript
 ...
 
+const mpw = new MoiPayWay("invalid_api_secret_key");
+
 try {
-    const req = await mpw.blockchain.details(payload);
-    console.log(req)
+    const response = await mpw.token.multi.mint(payload);
+    console.log(response)
 } catch (e) {
     console.log(e)
 }
@@ -92,31 +119,27 @@ Response :
 BadRequestError {
   name: 'BadRequestError',
   status: 400,
-  message: 'You are not authorized to perform this request. Please contact support'
+  message: 'Invalid authorization bearer'
 }
 ```
 
-## Authenticate
-Merchants can reset/get their secret token by calling `MoiPayWayAuth` method. This method requires the merchant's Public/API Key.
+## More usage documentation
+- [Authentication](documentation/Authentication.md)
+- [User](documentation/User.md)
+- [Wallet](documentation/Wallet.md)
+- [Token](documentation/Token.md)
+- [Verification](documentation/Authentication.md)
+- [Misc](documentation/Authentication.md)
 
-```javascript
-import { MoiPayWayAuth } from "mpw-node"
+## Testing
 
-const payload = {
-    email:"", 
-    password: ""
-}
+Prior to running tests, ensure you have renamed the `.env.example` file to `.env` and populated it with a test key (testSecretKey). Then, execute the following command:
 
-try {
-    const req = await MoiPayWayAuth("public_key", payload); 
-    console.log(req)
-} catch (e) {
-    console.log(e)
-}
-
+```bash
+npm test
 ```
 
 
 ## License
 
-[ISC](https://choosealicense.com/licenses/isc/)
+[MIT](https://choosealicense.com/licenses/mit/)
