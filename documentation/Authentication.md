@@ -54,11 +54,11 @@ This endpoint allows a user to connect to a merchant account and gain access to 
 import MoiPayWay from "mpw-node"
 
 try {
-    const connectionToken = await MoiPayWay.connect(connectToken, {
+    const response = await MoiPayWay.connect(connectToken.data.token, {
         api_key: "your api public key",
         period: "specify token lifetime (Enum: `onetime` or `forever`)"
     });
-    console.log(connectionToken)
+    console.log(response)
 
 } catch (e) {
     console.log(e)
