@@ -686,7 +686,7 @@ import MoiPayWay from "mpw-node"
 const mpw = new MoiPayWay("secret_token");
 
 try {
-    console.log(await mpw.verification.LivenessCheck({
+    console.log(await mpw.verification.livenessCheck({
         "meta": {
             "video": "",
             "phone_number": ""

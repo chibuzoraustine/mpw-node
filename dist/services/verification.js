@@ -152,7 +152,7 @@ class Verification {
             return (0, helpers_js_1.response)(res);
         });
     }
-    LivenessCheck(payload) {
+    livenessCheck(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('verification/lookup', Object.assign({ code: "user_liveness_check" }, payload));
             return (0, helpers_js_1.response)(res);

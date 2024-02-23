@@ -27,7 +27,7 @@ export default class Verification {
     ngPhone(payload: VerifyNgPhoneRequest): Promise<Res<VerifyNgPhoneResponse>>;
     ninFaceMatch(payload: VerifyNINFaceMatchRequest): Promise<Res<any>>;
     ninPhoneMatch(payload: VerifyNINPhoneMatchRequest): Promise<Res<any>>;
-    LivenessCheck(payload: VerifyLivenessCheckRequest): Promise<Res<any>>;
+    livenessCheck(payload: VerifyLivenessCheckRequest): Promise<Res<any>>;
     GlobalSanction(payload: VerifyGlobalSanctionRequest): Promise<Res<any>>;
     pep(payload: VerifyPEPRequest): Promise<Res<any>>;
     ngVotersCard(payload: VerifyNgVotersCardRequest): Promise<Res<any>>;

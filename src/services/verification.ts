@@ -159,7 +159,7 @@ export default class Verification {
         return response<any>(res);
     }
 
-    async LivenessCheck(payload: VerifyLivenessCheckRequest): Promise<Res<any>> {
+    async livenessCheck(payload: VerifyLivenessCheckRequest): Promise<Res<any>> {
         const res = await this.base.request('verification/lookup', { code: "user_liveness_check", ...payload });
         return response<any>(res);
     }
