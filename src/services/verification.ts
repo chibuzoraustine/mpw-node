@@ -119,7 +119,7 @@ export default class Verification {
         return response<any>(res);
     }
 
-    async ngIndividualCreditCheckt(payload: VerifyNgIndividualCreditCheckRequest): Promise<Res<any>> {
+    async ngIndividualCreditCheck(payload: VerifyNgIndividualCreditCheckRequest): Promise<Res<any>> {
         const res = await this.base.request('verification/lookup', { code: "ng_credit_check_individual", ...payload });
         return response<any>(res);
     }

@@ -1,10 +1,10 @@
-# MoiPayWay Nodejs Library
+<h1>MoiPayWay Nodejs Library</h1>
 
 <p align="center">
     <img title="MoiPayWay" src="https://moipayway.com/wp-content/uploads/2023/04/moipayway.png" width="50%"/>
 </p>
 
-## Introduction
+<h2>Introduction</h2>
 
 The library simplifies interaction with Moipayway APIs in your Node applications. It streamlines the process of integration, eliminating the need to deal with intricate details, and facilitates rapid API calls. Key features includes:
 
@@ -16,19 +16,17 @@ The library simplifies interaction with Moipayway APIs in your Node applications
 - AI: verify document image (drivers license NIN, BVN, etc), Face Comparison.
 - Lookups: Document validity check, CAC, etc.
 
-## Table of Content
-- [MoiPayWay Nodejs Library](#moipayway-nodejs-library)
-  - [Introduction](#introduction)
-  - [Table of Content](#table-of-content)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Initialization](#initialization)
-  - [Authenticate](#authenticate)
-  - [Sending requests with payload](#sending-requests-with-payload)
-  - [Error handling](#error-handling)
-  - [More usage documentation](#more-usage-documentation)
-  - [Testing](#testing)
-  - [License](#license)
+<h2>Table of Content</h2>
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Initialization](#initialization)
+- [Authenticate](#authenticate)
+- [Sending requests with payload](#sending-requests-with-payload)
+- [Error handling](#error-handling)
+- [More usage documentation](#more-usage-documentation)
+- [Testing](#testing)
+- [License](#license)
 
 
 ## Requirements

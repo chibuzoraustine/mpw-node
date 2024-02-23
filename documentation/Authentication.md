@@ -2,13 +2,12 @@
     <img title="MoiPayWay" src="https://moipayway.com/wp-content/uploads/2023/04/moipayway.png" width="50%"/>
 </p>
 
-# Authenticate
+<h1>Authenticate</h1>
 
 Verify, authenticate, and gain access to MoiPayWay resources. The methods outlined in this document are static and do not require initialization. Generating a secret token involves a two-step process outlined below:
 
-- [Authenticate](#authenticate)
-  - [Initiate](#initiate)
-  - [Connect](#connect)
+- [Initiate](#initiate)
+- [Connect](#connect)
 
 ## Initiate
 

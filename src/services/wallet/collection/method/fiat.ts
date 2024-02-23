@@ -2,11 +2,13 @@ import Base from "../../../../services/base.js";
 import {
     Res,
     WalletCollectionMethodFiatInfoRequest,
+    WalletCollectionMethodFiatInfoResponse,
     WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest,
     WalletCollectionMethodFiatPayWithCardEmbedRequest,
     WalletCollectionMethodFiatPayWithCardNakedRequest,
     WalletCollectionMethodFiatPayWithSavedCardTokenRequest,
-    WalletCollectionMethodFiatPayWithUSSDRequest
+    WalletCollectionMethodFiatPayWithUSSDRequest,
+    WalletCollectionMethodFiatPayWithUSSDResponse
 } from "../../../../types/index.js";
 import { response } from "../../../../utils/helpers.js";
 
@@ -18,14 +20,14 @@ export default class WalletCollectionMethodFiat {
         this.base = base;
     }
 
-    async info(payload: WalletCollectionMethodFiatInfoRequest): Promise<Res<any>> {
+    async info(payload: WalletCollectionMethodFiatInfoRequest): Promise<Res<WalletCollectionMethodFiatInfoResponse>> {
         const res = await this.base.request('wallet/collection/method/get-info', payload);
-        return response<any>(res);
+        return response<WalletCollectionMethodFiatInfoResponse>(res);
     }
 
-    async payWithUSSD(payload: WalletCollectionMethodFiatPayWithUSSDRequest): Promise<Res<any>> {
+    async payWithUSSD(payload: WalletCollectionMethodFiatPayWithUSSDRequest): Promise<Res<WalletCollectionMethodFiatPayWithUSSDResponse>> {
         const res = await this.base.request('wallet/collection/method/ussd', payload);
-        return response<any>(res);
+        return response<WalletCollectionMethodFiatPayWithUSSDResponse>(res);
     }
 
     async payToDynamicVirtualAccount(payload: WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest): Promise<Res<any>> {
