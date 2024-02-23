@@ -104,7 +104,7 @@ class Verification {
             return (0, helpers_js_1.response)(res);
         });
     }
-    ngIndividualCreditCheckt(payload) {
+    ngIndividualCreditCheck(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('verification/lookup', Object.assign({ code: "ng_credit_check_individual" }, payload));
             return (0, helpers_js_1.response)(res);

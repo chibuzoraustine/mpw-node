@@ -18,9 +18,9 @@ class Authentication {
             return (0, helpers_js_1.response)(_req.data);
         });
     }
-    static connect(accessToken, payload) {
+    static connect(connectionToken, payload) {
         return __awaiter(this, void 0, void 0, function* () {
-            let _req = yield (0, http_js_1.default)(accessToken).post('authentication/connect', payload);
+            let _req = yield (0, http_js_1.default)(connectionToken).post('authentication/connect', payload);
             return (0, helpers_js_1.response)(_req.data);
         });
     }

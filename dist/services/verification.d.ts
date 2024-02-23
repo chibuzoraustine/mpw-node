@@ -19,7 +19,7 @@ export default class Verification {
     companySearch(payload: VerifyCompanySearchRequest): Promise<Res<any>>;
     documentImage(payload: VerifyDocumentImageRequest): Promise<Res<any>>;
     faceComparison(payload: VerifyFaceComparisonRequest): Promise<Res<any>>;
-    ngIndividualCreditCheckt(payload: VerifyNgIndividualCreditCheckRequest): Promise<Res<any>>;
+    ngIndividualCreditCheck(payload: VerifyNgIndividualCreditCheckRequest): Promise<Res<any>>;
     ngBusinessCreditCheck(payload: VerifyNgBusinessCreditCheckRequest): Promise<Res<any>>;
     ngDriverLicenseDateofBirthFaceMatch(payload: VerifyNgDriverLicenseDateofBirthFaceMatchRequest): Promise<Res<any>>;
     ngDriverLicense(payload: VerifyNgDriverLicenseRequest): Promise<Res<any>>;

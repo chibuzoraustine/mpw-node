@@ -1,6 +1,6 @@
 {
   "name": "mpw-node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "The library simplifies interaction with Moipayway APIs in your Node applications. It streamlines the process of integration, eliminating the need to deal with intricate details, and facilitates rapid API calls.",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",

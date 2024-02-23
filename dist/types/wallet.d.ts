@@ -233,11 +233,29 @@ export interface WalletCollectionMethodFiatInfoRequest {
     currency?: string;
     order_reference_code: string;
 }
+export interface WalletCollectionMethodFiatInfoResponse {
+    bank_name: string;
+    institution_id: number;
+}
 export interface WalletCollectionMethodFiatPayWithUSSDRequest {
     order_reference_code: string;
     meta: {
         institution_id: string;
         narration?: string;
+    };
+}
+export interface WalletCollectionMethodFiatPayWithUSSDResponse {
+    code: string;
+    order_reference_code: string;
+    meta: {
+        wallet_id: string;
+        amount: string;
+        currency: string;
+        ussd: string;
+        bank_name: string;
+        duration: number;
+        duration_unit: string;
+        narration: string;
     };
 }
 export interface WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest {
