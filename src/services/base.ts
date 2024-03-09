@@ -1,5 +1,5 @@
-import http from "../libs/http.js";
-import { BadRequestError } from "../utils/errors.js";
+import http from "../libs/http";
+import { BadRequestError } from "../utils/errors";
 
 export default class Base {
 

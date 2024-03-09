@@ -9,24 +9,30 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_1 = require("../utils/helpers");
-class Misc {
+const ethers_1 = require("ethers");
+class Crypto {
     constructor(base) {
         this.base = base;
     }
-    fileUpload(payload) {
+    ethSignTransaction(privateKey, txParams) {
         return __awaiter(this, void 0, void 0, function* () {
-            const formData = new FormData();
-            formData.append('file', payload);
-            const res = yield this.base.request('file-upload', formData, "multipart/form-data");
-            return (0, helpers_1.response)(res);
-        });
-    }
-    countries() {
-        return __awaiter(this, void 0, void 0, function* () {
-            const res = yield this.base.request('countries');
-            return (0, helpers_1.response)(res);
+            try {
+                const wallet = new ethers_1.ethers.Wallet(privateKey);
+                const signature = yield wallet.signTransaction(txParams);
+                return {
+                    status: "success",
+                    message: "",
+                    data: signature
+                };
+            }
+            catch (error) {
+                return {
+                    status: "error",
+                    message: "Error while signing transaction",
+                    data: ""
+                };
+            }
         });
     }
 }
-exports.default = Misc;
+exports.default = Crypto;

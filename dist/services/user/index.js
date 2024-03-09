@@ -9,29 +9,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_js_1 = require("../../utils/helpers.js");
-const verification_js_1 = require("./verification.js");
+const helpers_1 = require("../../utils/helpers");
+const verification_1 = require("./verification");
 class User {
     constructor(base) {
         this.base = base;
-        this.verification = new verification_js_1.default(base);
+        this.verification = new verification_1.default(base);
     }
     create(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('user/create', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
     update(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('user/update', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
     details(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('user/details', payload);
-            return (0, helpers_js_1.responsePaginate)(res);
+            return (0, helpers_1.responsePaginate)(res);
         });
     }
 }

@@ -1,6 +1,5 @@
-import MoiPayWay from '../src/index.js';
-import dotenv from "dotenv";
-dotenv.config();
+import MoiPayWay from '../src/index';
+import "dotenv/config";
 
 describe('MoiPayWay SDK Integration Tests', () => {
 
@@ -12,7 +11,7 @@ describe('MoiPayWay SDK Integration Tests', () => {
   });
 
   it('must be initialized with a valid secret token', async () => {
-    // console.log(process.env.testSecretKey)
+    console.log(process.env.testSecretKey)
     let valid: boolean = false;
     try {
       await moipayway.misc.countries();
@@ -21,7 +20,6 @@ describe('MoiPayWay SDK Integration Tests', () => {
       console.log('response error:', error);
       valid = false;
     }
-
     expect(valid).toBe(true);
   });
 

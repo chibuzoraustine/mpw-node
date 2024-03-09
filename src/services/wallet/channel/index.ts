@@ -1,5 +1,5 @@
-import Base from "../../../services/base.js";
-import WalletChannelTransferRecipient from "./transfer_recipient/index.js";
+import Base from "../../../services/base";
+import WalletChannelTransferRecipient from "./transfer_recipient/index";
 import {
     Res,
     WalletChannelChainAddressRequest,
@@ -7,8 +7,8 @@ import {
     WalletChannelDownloadRequest,
     WalletChannelRemoveRequest,
     WalletChannelVirtualAccountRequest
-} from "../../../types/index.js";
-import { response } from "../../../utils/helpers.js";
+} from "../../../types/index";
+import { response } from "../../../utils/helpers";
 
 export default class WalletChannel {
 

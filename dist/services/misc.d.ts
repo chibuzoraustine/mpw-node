@@ -1,6 +1,6 @@
-import Base from "./base.js";
-import { MiscCountriesResponse, MiscFileUploadResponse } from "../types/index.js";
-import { Res } from "../types/index.js";
+import Base from "./base";
+import { MiscCountriesResponse, MiscFileUploadResponse } from "../types/index";
+import { Res } from "../types/index";
 export default class Misc {
     private base;
     constructor(base: Base);

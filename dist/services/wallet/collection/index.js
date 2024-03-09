@@ -9,17 +9,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_js_1 = require("../../../utils/helpers.js");
-const index_js_1 = require("./method/index.js");
+const helpers_1 = require("../../../utils/helpers");
+const index_1 = require("./method/index");
 class WalletCollection {
     constructor(base) {
         this.base = base;
-        this.method = new index_js_1.default(this.base);
+        this.method = new index_1.default(this.base);
     }
     initiate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/collection/initiate', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
 }

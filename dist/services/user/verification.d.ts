@@ -1,5 +1,5 @@
-import { Res, UserVerifyBVNPhotoPhoneMatchRequest } from "../../types/index.js";
-import Base from "../base.js";
+import { Res, UserVerifyBVNPhotoPhoneMatchRequest } from "../../types/index";
+import Base from "../base";
 export default class UserVerification {
     #private;
     constructor(base: Base);

@@ -9,19 +9,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const http_js_1 = require("../libs/http.js");
-const helpers_js_1 = require("../utils/helpers.js");
+const http_1 = require("../libs/http");
+const helpers_1 = require("../utils/helpers");
 class Authentication {
     static initiate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
-            let _req = yield (0, http_js_1.default)().post('authentication/initiate', payload);
-            return (0, helpers_js_1.response)(_req.data);
+            let _req = yield (0, http_1.default)().post('authentication/initiate', payload);
+            return (0, helpers_1.response)(_req.data);
         });
     }
     static connect(connectionToken, payload) {
         return __awaiter(this, void 0, void 0, function* () {
-            let _req = yield (0, http_js_1.default)(connectionToken).post('authentication/connect', payload);
-            return (0, helpers_js_1.response)(_req.data);
+            let _req = yield (0, http_1.default)(connectionToken).post('authentication/connect', payload);
+            return (0, helpers_1.response)(_req.data);
         });
     }
 }

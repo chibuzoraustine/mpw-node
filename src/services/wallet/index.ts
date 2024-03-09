@@ -1,13 +1,13 @@
-import { Res, WalletUpdateRequest } from "../../types/index.js";
-import Base from "../base.js";
-import WalletCreate from "./create.js";
-import { response } from "../../utils/helpers.js";
-import WalletChannel from "./channel/index.js";
-import WalletCollection from "./collection/index.js";
-import WalletTransfer from "./transfer/index.js";
-import WalletDetails from "./details.js";
-import WalletTransactions from "./transactions.js";
-import WalletExchange from "./exchange/index.js";
+import { Res, WalletUpdateRequest } from "../../types/index";
+import Base from "../base";
+import WalletCreate from "./create";
+import { response } from "../../utils/helpers";
+import WalletChannel from "./channel/index";
+import WalletCollection from "./collection/index";
+import WalletTransfer from "./transfer/index";
+import WalletDetails from "./details";
+import WalletTransactions from "./transactions";
+import WalletExchange from "./exchange/index";
 
 export default class Wallet {
 

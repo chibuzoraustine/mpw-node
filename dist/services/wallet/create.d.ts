@@ -1,4 +1,4 @@
-import { Res, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "../../types/index.js";
+import { Res, WalletCreateCryptoRequest, WalletCreateFiatRequest } from "../../types/index";
 export default class WalletCreate {
     private base;
     constructor(base: any);

@@ -1,6 +1,6 @@
-import Base from "../../../services/base.js";
-import { Res, WalletExchangeCustodialCalculateRequest, WalletExchangeCustodialInitiateRequest } from "../../../types/index.js";
-import { response } from "../../../utils/helpers.js";
+import Base from "../../../services/base";
+import { Res, WalletExchangeCustodialCalculateRequest, WalletExchangeCustodialInitiateRequest } from "../../../types/index";
+import { response } from "../../../utils/helpers";
 
 export default class WalletExchangeCustodial {
 

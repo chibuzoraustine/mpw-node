@@ -1,6 +1,5 @@
-import MoiPayWay from '../src/index.js';
-import dotenv from "dotenv";
-dotenv.config();
+import MoiPayWay from '../src/index';
+import "dotenv/config";
 
 describe('MoiPayWay SDK Misc Tests', () => {
 
@@ -17,6 +16,4 @@ describe('MoiPayWay SDK Misc Tests', () => {
   });
 
   // more unit tests...
-
-
 });

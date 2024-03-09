@@ -1,6 +1,6 @@
-import { Res, ResponsePaginate, UserCreateRequest, UserCreateResponse, UserDetailsRequest, UserDetailsResponse, UserUpdateRequest, UserUpdateResponse } from "../../types/index.js";
-import Base from "../base.js";
-import UserVerification from "./verification.js";
+import { Res, ResponsePaginate, UserCreateRequest, UserCreateResponse, UserDetailsRequest, UserDetailsResponse, UserUpdateRequest, UserUpdateResponse } from "../../types/index";
+import Base from "../base";
+import UserVerification from "./verification";
 export default class User {
     private base;
     verification: UserVerification;

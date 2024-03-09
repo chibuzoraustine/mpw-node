@@ -1,5 +1,5 @@
-import Base from "../../../../services/base.js";
-import { Res, WalletChannelTransferRecipientNGNSingleRequest } from "../../../../types/index.js";
+import Base from "../../../../services/base";
+import { Res, WalletChannelTransferRecipientNGNSingleRequest } from "../../../../types/index";
 export default class WalletChannelTransferRecipientNGN {
     private base;
     constructor(base: Base);

@@ -1,8 +1,8 @@
-import Base from "../../../../services/base.js";
-import WalletChannelTransferRecipientEUR from "./eur.js";
-import WalletChannelTransferRecipientGBP from "./gbp.js";
-import WalletChannelTransferRecipientNGN from "./ngn.js";
-import WalletChannelTransferRecipientUSD from "./usd.js";
+import Base from "../../../../services/base";
+import WalletChannelTransferRecipientEUR from "./eur";
+import WalletChannelTransferRecipientGBP from "./gbp";
+import WalletChannelTransferRecipientNGN from "./ngn";
+import WalletChannelTransferRecipientUSD from "./usd";
 
 export default class WalletChannelTransferRecipient {
 

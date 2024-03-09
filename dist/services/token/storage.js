@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_js_1 = require("../../utils/helpers.js");
+const helpers_1 = require("../../utils/helpers");
 class TokenStorage {
     constructor(base) {
         this.base = base;
@@ -20,19 +20,19 @@ class TokenStorage {
             formData.append('file', payload.file);
             formData.append('chain', payload.chain);
             const res = yield this.base.request('token/storage/upload', formData, "multipart/form-data");
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
     create(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/storage/create', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
     details(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('token/storage/details', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
 }

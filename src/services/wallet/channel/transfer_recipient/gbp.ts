@@ -1,6 +1,6 @@
-import Base from "../../../../services/base.js";
-import { Res, WalletChannelTransferRecipientGBPSingleRequest } from "../../../../types/index.js";
-import { response } from "../../../../utils/helpers.js";
+import Base from "../../../../services/base";
+import { Res, WalletChannelTransferRecipientGBPSingleRequest } from "../../../../types/index";
+import { response } from "../../../../utils/helpers";
 
 export default class WalletChannelTransferRecipientGBP {
 

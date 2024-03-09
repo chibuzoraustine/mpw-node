@@ -1,11 +1,12 @@
-import Authentication from "./services/authentication.js";
-import Base from "./services/base.js"; 
-import Token from "./services/token/index.js";
-import Misc from "./services/misc.js";
-import User from "./services/user/index.js";
-import Verification from "./services/verification.js";
-import Wallet from "./services/wallet/index.js";
-import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Res } from "./types/index.js";
+import Authentication from "./services/authentication";
+import Base from "./services/base"; 
+import Token from "./services/token/index";
+import Misc from "./services/misc";
+import User from "./services/user/index";
+import Verification from "./services/verification";
+import Wallet from "./services/wallet/index";
+import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Res } from "./types/index";
+import Crypto from "./services/crypto";
 
 export default class MoiPayWay {
 
@@ -35,5 +36,7 @@ export default class MoiPayWay {
     static async connect(access_token: string, payload: AuthConnectPayload): Promise<Res<AuthResponse>> {
         return Authentication.connect(access_token, payload)
     }
+
+    static crypto: Crypto = new Crypto();
 
 }

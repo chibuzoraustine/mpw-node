@@ -1,7 +1,7 @@
-import Base from "../../../services/base.js";
-import { Res, WalletCollectionInitiateRequest } from "../../../types/index.js";
-import { response } from "../../../utils/helpers.js";
-import WalletCollectionMethod from "./method/index.js";
+import Base from "../../../services/base";
+import { Res, WalletCollectionInitiateRequest } from "../../../types/index";
+import { response } from "../../../utils/helpers";
+import WalletCollectionMethod from "./method/index";
 
 export default class WalletCollection {
 

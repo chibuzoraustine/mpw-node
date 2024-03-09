@@ -1,4 +1,4 @@
-import Base from "../../../../services/base.js";
+import Base from "../../../../services/base";
 import {
     Res,
     WalletCollectionMethodFiatInfoRequest,
@@ -9,8 +9,8 @@ import {
     WalletCollectionMethodFiatPayWithSavedCardTokenRequest,
     WalletCollectionMethodFiatPayWithUSSDRequest,
     WalletCollectionMethodFiatPayWithUSSDResponse
-} from "../../../../types/index.js";
-import { response } from "../../../../utils/helpers.js";
+} from "../../../../types/index";
+import { response } from "../../../../utils/helpers";
 
 export default class WalletCollectionMethodFiat {
 

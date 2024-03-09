@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const helpers_js_1 = require("../../utils/helpers.js");
+const helpers_1 = require("../../utils/helpers");
 class WalletCreate {
     constructor(base) {
         this.base = base;
@@ -17,13 +17,13 @@ class WalletCreate {
     fiat(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/create', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
     crypto(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/create', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
 }

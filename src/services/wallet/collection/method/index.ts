@@ -1,6 +1,6 @@
-import Base from "../../../../services/base.js";
-import WalletCollectionMethodFiat from "./fiat.js";
-import WalletCollectionMethodCrypto from "./crypto.js";
+import Base from "../../../../services/base";
+import WalletCollectionMethodFiat from "./fiat";
+import WalletCollectionMethodCrypto from "./crypto";
 
 export default class WalletCollectionMethod {
 

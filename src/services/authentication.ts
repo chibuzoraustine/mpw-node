@@ -1,6 +1,6 @@
-import http from "../libs/http.js";
-import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Res } from "../types/index.js";
-import { response } from "../utils/helpers.js";
+import http from "../libs/http";
+import { AuthConnectPayload, AuthInitiatePayload, AuthResponse, Res } from "../types/index";
+import { response } from "../utils/helpers";
 
 export default class Authentication {
 

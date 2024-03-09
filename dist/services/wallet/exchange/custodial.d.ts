@@ -1,5 +1,5 @@
-import Base from "../../../services/base.js";
-import { Res, WalletExchangeCustodialCalculateRequest, WalletExchangeCustodialInitiateRequest } from "../../../types/index.js";
+import Base from "../../../services/base";
+import { Res, WalletExchangeCustodialCalculateRequest, WalletExchangeCustodialInitiateRequest } from "../../../types/index";
 export default class WalletExchangeCustodial {
     private base;
     constructor(base: Base);

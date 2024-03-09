@@ -2,10 +2,10 @@ import {
     TokenStorageCreateRequest,
     TokenStorageDetailsRequest,
     TokenStorageUploadRequest
-} from "../../types/index.js";
-import Base from "../base.js";
-import { Res } from "../../types/index.js";
-import { response } from "../../utils/helpers.js";
+} from "../../types/index";
+import Base from "../base";
+import { Res } from "../../types/index";
+import { response } from "../../utils/helpers";
 
 export default class TokenStorage {
 

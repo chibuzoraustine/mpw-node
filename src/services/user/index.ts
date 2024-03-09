@@ -7,10 +7,10 @@ import {
     UserDetailsResponse,
     UserUpdateRequest,
     UserUpdateResponse
-} from "../../types/index.js";
-import Base from "../base.js";
-import { response, responsePaginate } from "../../utils/helpers.js";
-import UserVerification from "./verification.js";
+} from "../../types/index";
+import Base from "../base";
+import { response, responsePaginate } from "../../utils/helpers";
+import UserVerification from "./verification";
 
 export default class User {
 

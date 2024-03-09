@@ -1,5 +1,5 @@
-import Base from "../../../../services/base.js";
-import { Res, WalletCollectionMethodFiatInfoRequest, WalletCollectionMethodFiatInfoResponse, WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest, WalletCollectionMethodFiatPayWithCardEmbedRequest, WalletCollectionMethodFiatPayWithCardNakedRequest, WalletCollectionMethodFiatPayWithSavedCardTokenRequest, WalletCollectionMethodFiatPayWithUSSDRequest, WalletCollectionMethodFiatPayWithUSSDResponse } from "../../../../types/index.js";
+import Base from "../../../../services/base";
+import { Res, WalletCollectionMethodFiatInfoRequest, WalletCollectionMethodFiatInfoResponse, WalletCollectionMethodFiatPayToDynamicVirtualAccountRequest, WalletCollectionMethodFiatPayWithCardEmbedRequest, WalletCollectionMethodFiatPayWithCardNakedRequest, WalletCollectionMethodFiatPayWithSavedCardTokenRequest, WalletCollectionMethodFiatPayWithUSSDRequest, WalletCollectionMethodFiatPayWithUSSDResponse } from "../../../../types/index";
 export default class WalletCollectionMethodFiat {
     private base;
     constructor(base: Base);

@@ -1,6 +1,6 @@
-import { TokenStorageDetailsRequest, TokenMultiBurnRequest, TokenMultiDeployRequest, TokenMultiMintRequest, TokenMultiTransferRequest } from "../../types/index.js";
-import Base from "../base.js";
-import { Res } from "../../types/index.js";
+import { TokenStorageDetailsRequest, TokenMultiBurnRequest, TokenMultiDeployRequest, TokenMultiMintRequest, TokenMultiTransferRequest } from "../../types/index";
+import Base from "../base";
+import { Res } from "../../types/index";
 export default class TokenMulti {
     private base;
     constructor(base: Base);

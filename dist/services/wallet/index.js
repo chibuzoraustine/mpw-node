@@ -9,29 +9,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const create_js_1 = require("./create.js");
-const helpers_js_1 = require("../../utils/helpers.js");
-const index_js_1 = require("./channel/index.js");
-const index_js_2 = require("./collection/index.js");
-const index_js_3 = require("./transfer/index.js");
-const details_js_1 = require("./details.js");
-const transactions_js_1 = require("./transactions.js");
-const index_js_4 = require("./exchange/index.js");
+const create_1 = require("./create");
+const helpers_1 = require("../../utils/helpers");
+const index_1 = require("./channel/index");
+const index_2 = require("./collection/index");
+const index_3 = require("./transfer/index");
+const details_1 = require("./details");
+const transactions_1 = require("./transactions");
+const index_4 = require("./exchange/index");
 class Wallet {
     constructor(base) {
         this.base = base;
-        this.create = new create_js_1.default(this.base);
-        this.channel = new index_js_1.default(this.base);
-        this.collection = new index_js_2.default(this.base);
-        this.transfer = new index_js_3.default(this.base);
-        this.details = new details_js_1.default(this.base);
-        this.transactions = new transactions_js_1.default(this.base);
-        this.exchange = new index_js_4.default(this.base);
+        this.create = new create_1.default(this.base);
+        this.channel = new index_1.default(this.base);
+        this.collection = new index_2.default(this.base);
+        this.transfer = new index_3.default(this.base);
+        this.details = new details_1.default(this.base);
+        this.transactions = new transactions_1.default(this.base);
+        this.exchange = new index_4.default(this.base);
     }
     update(payload) {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.base.request('wallet/update', payload);
-            return (0, helpers_js_1.response)(res);
+            return (0, helpers_1.response)(res);
         });
     }
 }

@@ -1,6 +1,6 @@
-import { ApiResponse, ApiResponsePaginate, Res, ResponsePaginate } from "../types/index.js";
-import { baseUrl } from "./config.js";
-import { BadRequestError } from "./errors.js";
+import { ApiResponse, ApiResponsePaginate, Res, ResponsePaginate } from "../types/index";
+import { baseUrl } from "./config";
+import { BadRequestError } from "./errors";
 
 // @dev returns a strutured response.
 export function response<U>(data: ApiResponse<U>): Res<U> {

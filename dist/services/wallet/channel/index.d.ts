@@ -1,6 +1,6 @@
-import Base from "../../../services/base.js";
-import WalletChannelTransferRecipient from "./transfer_recipient/index.js";
-import { Res, WalletChannelChainAddressRequest, WalletChannelDetailsRequest, WalletChannelDownloadRequest, WalletChannelRemoveRequest, WalletChannelVirtualAccountRequest } from "../../../types/index.js";
+import Base from "../../../services/base";
+import WalletChannelTransferRecipient from "./transfer_recipient/index";
+import { Res, WalletChannelChainAddressRequest, WalletChannelDetailsRequest, WalletChannelDownloadRequest, WalletChannelRemoveRequest, WalletChannelVirtualAccountRequest } from "../../../types/index";
 export default class WalletChannel {
     private base;
     transferRecipient: WalletChannelTransferRecipient;

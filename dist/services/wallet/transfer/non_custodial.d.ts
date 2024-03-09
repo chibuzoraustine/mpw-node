@@ -1,5 +1,5 @@
-import Base from "../../../services/base.js";
-import { Res, WalletTransferNonCustodialSingleRequest } from "../../../types/index.js";
+import Base from "../../../services/base";
+import { Res, WalletTransferNonCustodialSingleRequest } from "../../../types/index";
 export default class WalletTransferNonCustodial {
     private base;
     constructor(base: Base);

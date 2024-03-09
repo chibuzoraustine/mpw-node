@@ -1,6 +1,6 @@
-import { Res, UserVerifyBVNPhotoPhoneMatchRequest } from "../../types/index.js";
-import Base from "../base.js";
-import { response } from "../../utils/helpers.js";
+import { Res, UserVerifyBVNPhotoPhoneMatchRequest } from "../../types/index";
+import Base from "../base";
+import { response } from "../../utils/helpers";
 
 export default class UserVerification {
 
