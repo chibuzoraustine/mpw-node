@@ -11,9 +11,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const ethers_1 = require("ethers");
 class Crypto {
-    constructor(base) {
-        this.base = base;
-    }
     ethSignTransaction(privateKey, txParams) {
         return __awaiter(this, void 0, void 0, function* () {
             try {

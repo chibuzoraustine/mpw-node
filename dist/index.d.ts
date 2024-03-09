@@ -13,8 +13,8 @@ export default class MoiPayWay {
     verification: Verification;
     token: Token;
     wallet: Wallet;
-    crypto: Crypto;
     constructor(secret_token: string);
     static initiate(payload: AuthInitiatePayload): Promise<Res<AuthResponse>>;
     static connect(access_token: string, payload: AuthConnectPayload): Promise<Res<AuthResponse>>;
+    static crypto: Crypto;
 }

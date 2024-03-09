@@ -26,7 +26,6 @@ class MoiPayWay {
         this.verification = new verification_1.default(this.base);
         this.token = new index_1.default(this.base);
         this.wallet = new index_3.default(this.base);
-        this.crypto = new crypto_1.default(this.base);
     }
     static initiate(payload) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -39,4 +38,5 @@ class MoiPayWay {
         });
     }
 }
+MoiPayWay.crypto = new crypto_1.default();
 exports.default = MoiPayWay;
